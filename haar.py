@@ -6,8 +6,8 @@ from PIL import Image
 
 
 def haar(image_path):
-    face_cascade = cv2.CascadeClassifier('classificators/haarcascade_frontalface_default.xml')
-    eyes_cascade = cv2.CascadeClassifier('classificators/haarcascade_eye.xml')
+    face_cascade = cv2.CascadeClassifier('classifiers/haarcascade_frontalface_default.xml')
+    eyes_cascade = cv2.CascadeClassifier('classifiers/haarcascade_eye.xml')
 
     image = cv2.imread(image_path)
     gray = convert_color_channel(image, 'BGR', 'GRAY')
