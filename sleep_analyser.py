@@ -104,11 +104,4 @@ def run_code():
             break
     video_capture.release()
     cv2.destroyAllWindows()
-    return yawn_count
-
-# def load_video():
-#     uploaded_file = st.file_uploader("Choose a WEBM file", type="webm")
-#     if uploaded_file is not None:
-#         image = Image.open(uploaded_file)
-#         image = image.save('images/video.webm')
-#         return True
+    return yawn_count, video_capture
